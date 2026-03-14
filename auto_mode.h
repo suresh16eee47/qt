@@ -51,25 +51,34 @@ private slots:
 
     void uart_write(uint16_t address, uint16_t data, bool isWrite);
 
+    quint16 uart_read(uint16_t address);
+
     void on_freq_cnfg_clicked();
 
     void on_tx_enable_clicked();
+
+    void on_lvds_rx_read_clicked();
+
+    void on_tx_config_clicked();
+
+    void on_lvttl_rx_read_clicked();
+
 
 private:
     Ui::auto_mode *ui;
     QSerialPort *serial;
     std::vector<uint16_t>
-    gp1_grp1_pul_cnt_addr_lst,
-    gp1_grp2_pul_cnt_addr_lst,
-    gp1_grp3_pul_cnt_addr_lst,
-    gp1_grp4_pul_cnt_addr_lst,
-    gp1_grp5_pul_cnt_addr_lst,
+    gpi_grp1_pul_cnt_addr_lst,
+    gpi_grp2_pul_cnt_addr_lst,
+    gpi_grp3_pul_cnt_addr_lst,
+    gpi_grp4_pul_cnt_addr_lst,
+    gpi_grp5_pul_cnt_addr_lst,
 
-    gp1_grp1_glitch_cnt_addr_lst,
-    gp1_grp2_glitch_cnt_addr_lst,
-    gp1_grp3_glitch_cnt_addr_lst,
-    gp1_grp4_glitch_cnt_addr_lst,
-    gp1_grp5_glitch_cnt_addr_lst;
+    gpi_grp1_glitch_cnt_addr_lst,
+    gpi_grp2_glitch_cnt_addr_lst,
+    gpi_grp3_glitch_cnt_addr_lst,
+    gpi_grp4_glitch_cnt_addr_lst,
+    gpi_grp5_glitch_cnt_addr_lst;
 };
 
 #endif // AUTO_MODE_H
