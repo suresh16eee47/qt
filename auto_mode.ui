@@ -6,2453 +6,2937 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1653</width>
-    <height>880</height>
+    <width>1901</width>
+    <height>1048</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QGroupBox" name="groupBox_4">
+   <widget class="QGroupBox" name="groupBox_12">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>110</y>
-      <width>421</width>
-      <height>561</height>
+      <x>300</x>
+      <y>10</y>
+      <width>1601</width>
+      <height>1011</height>
      </rect>
     </property>
     <property name="title">
-     <string>TRANSMITTER</string>
+     <string>TRANSMITTER / RECEIVER</string>
     </property>
-    <widget class="QGroupBox" name="groupBox">
+    <widget class="QGroupBox" name="Receiver_group">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>70</y>
-       <width>211</width>
-       <height>471</height>
+       <x>450</x>
+       <y>20</y>
+       <width>1131</width>
+       <height>831</height>
       </rect>
      </property>
      <property name="title">
-      <string>LVDS TRANSMITTER</string>
+      <string>RECEIVER</string>
      </property>
-     <widget class="QWidget" name="">
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>320</y>
+        <width>271</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>LVTTL RECEIVER</string>
+      </property>
+      <widget class="QRadioButton" name="lvttl_rx_en">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>67</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LVTTL RX</string>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>71</y>
+         <width>261</width>
+         <height>275</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="QRadioButton" name="LVTTL_rx_en_61">
+              <property name="text">
+               <string>CHANNEL 61</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="rx_freq_61"/>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="glitch_cnt_61"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="QRadioButton" name="LVTTL_rx_en_62">
+              <property name="text">
+               <string>CHANNEL 62</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="rx_freq_62"/>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="glitch_cnt_62"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <item>
+             <widget class="QRadioButton" name="LVTTL_rx_en_63">
+              <property name="text">
+               <string>CHANNEL 63</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="rx_freq_63"/>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="glitch_cnt_63"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <item>
+             <widget class="QRadioButton" name="LVTTL_rx_en_64">
+              <property name="text">
+               <string>CHANNEL 64</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="rx_freq_64"/>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="glitch_cnt_64"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_14">
+            <item>
+             <widget class="QRadioButton" name="LVTTL_rx_en_65">
+              <property name="text">
+               <string>CHANNEL 65</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="rx_freq_65"/>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="glitch_cnt_65"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_15">
+            <item>
+             <widget class="QRadioButton" name="LVTTL_rx_en_66">
+              <property name="text">
+               <string>CHANNEL 66</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="rx_freq_66"/>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="glitch_cnt_66"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_16">
+            <item>
+             <widget class="QRadioButton" name="LVTTL_rx_en_67">
+              <property name="text">
+               <string>CHANNEL 67</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="rx_freq_67"/>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="glitch_cnt_67"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_17">
+            <item>
+             <widget class="QRadioButton" name="LVTTL_rx_en_68">
+              <property name="text">
+               <string>CHANNEL 68</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="rx_freq_68"/>
+            </item>
+            <item>
+             <widget class="QLCDNumber" name="glitch_cnt_68"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="lvttl_rx_read">
+          <property name="text">
+           <string>READ</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="glitch5">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>40</y>
+         <width>82</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>GLITCH COUNT</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="status5">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>40</y>
+         <width>81</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PASS / FAIL</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>70</y>
+        <width>271</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>RS422 RECEIVER</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>261</width>
+         <height>149</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QRadioButton" name="rs422_rx_en_57">
+            <property name="text">
+             <string>CHANNEL 57</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="RS422_freq_57"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="RS422_glitch_cnt_57"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rs422_rx_en_58">
+            <property name="text">
+             <string>CHANNEL 58</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="RS422_freq_58"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="RS422_glitch_cnt_58"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_19">
+          <item>
+           <widget class="QRadioButton" name="rs422_rx_en_59">
+            <property name="text">
+             <string>CHANNEL 59</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="RS422_freq_59"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="RS422_glitch_cnt_59"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_20">
+          <item>
+           <widget class="QRadioButton" name="rs422_rx_en_60">
+            <property name="text">
+             <string>CHANNEL 60</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="RS422_freq_60"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="RS422_glitch_cnt_60"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="RS422_rx_read">
+          <property name="text">
+           <string>READ</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="status4">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>40</y>
+         <width>81</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PASS / FAIL</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="glitch4">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>40</y>
+         <width>82</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>GLITCH COUNT</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="rs422_rx_en">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>70</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>RS422 RX</string>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="lvds_receiver_group">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
-        <width>182</width>
-        <height>441</height>
+        <y>70</y>
+        <width>831</width>
+        <height>711</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_13">
+      <property name="title">
+       <string>LVDS RECEIVER</string>
+      </property>
+      <widget class="QRadioButton" name="lvds_rx_en">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>63</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LVDS RX</string>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="lvds_rx_read">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>680</y>
+         <width>701</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>READ</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>70</y>
+         <width>261</width>
+         <height>554</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_56">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_37">
+            <property name="text">
+             <string>CHANNEL 39</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_37"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_37"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_66">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_47">
+            <property name="text">
+             <string>CHANNEL 40</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_47"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_47"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_58">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_39">
+            <property name="text">
+             <string>CHANNEL 41</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_39"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_39"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_74">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_55">
+            <property name="text">
+             <string>CHANNEL 42</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_55"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_55"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_61">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_42">
+            <property name="text">
+             <string>CHANNEL 43</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_42"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_42"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_70">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_51">
+            <property name="text">
+             <string>CHANNEL 44</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_51"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_51"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_55">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_36">
+            <property name="text">
+             <string>CHANNEL 45</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_36"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_36"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_43">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_24">
+            <property name="text">
+             <string>CHANNEL 46</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_24"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_24"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_21">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_15">
+            <property name="text">
+             <string>CHANNEL 47</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_15"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_15"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_51">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_32">
+            <property name="text">
+             <string>CHANNEL 48</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_32"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_32"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_27">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_9">
+            <property name="text">
+             <string>CHANNEL 49</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_9"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_9"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_34">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_2">
+            <property name="text">
+             <string>CHANNEL 50</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_2"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_2"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_42">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_23">
+            <property name="text">
+             <string>CHANNEL 51</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_23"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_23"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_40">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_21">
+            <property name="text">
+             <string>CHANNEL 52</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_21"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_21"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_24">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_12">
+            <property name="text">
+             <string>CHANNEL 53</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_12"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_12"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_41">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_22">
+            <property name="text">
+             <string>CHANNEL 54</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_22"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_22"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_23">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_13">
+            <property name="text">
+             <string>CHANNEL 55</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_13"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_13"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_31">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_5">
+            <property name="text">
+             <string>CHANNEL 56</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_5"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_5"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="status1">
+       <property name="geometry">
+        <rect>
+         <x>104</x>
+         <y>40</y>
+         <width>81</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PASS / FAIL</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="glitch1">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>41</y>
+         <width>82</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>GLITCH COUNT</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="glitch2">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>41</y>
+         <width>82</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>GLITCH COUNT</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="status2">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>40</y>
+         <width>81</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PASS / FAIL</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="status3">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>40</y>
+         <width>81</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PASS / FAIL</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="glitch3">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>40</y>
+         <width>82</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>GLITCH COUNT</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>71</y>
+         <width>261</width>
+         <height>430</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_63">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_44">
+            <property name="text">
+             <string>CHANNEL 20</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_44"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_44"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_28">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_8">
+            <property name="text">
+             <string>CHANNEL 21</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_8"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_8"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_25">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_11">
+            <property name="text">
+             <string>CHANNEL 22</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_11"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_11"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_29">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_7">
+            <property name="text">
+             <string>CHANNEL 23</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_7"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_7"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_16">
+            <property name="text">
+             <string>CHANNEL 24</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_16"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_16"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_39">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_20">
+            <property name="text">
+             <string>CHANNEL 25</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_20"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_20"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_22">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_14">
+            <property name="text">
+             <string>CHANNEL 26</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_14"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_14"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_36">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_17">
+            <property name="text">
+             <string>CHANNEL 27</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_17"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_17"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_37">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_18">
+            <property name="text">
+             <string>CHANNEL 28</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_18"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_18"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_35">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_1">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>CHANNEL 29</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_1"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_1"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_33">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_3">
+            <property name="text">
+             <string>CHANNEL 30</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_3"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_3"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_26">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_10">
+            <property name="text">
+             <string>CHANNEL 31</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_10"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_10"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_32">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_4">
+            <property name="text">
+             <string>CHANNEL 32</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_4"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_4"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_38">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_19">
+            <property name="text">
+             <string>CHANNEL 33</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_19"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_19"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>510</y>
+         <width>261</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_52">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_33">
+            <property name="text">
+             <string>CHANNEL 34</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_33"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_33"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_75">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_56">
+            <property name="text">
+             <string>CHANNEL 35</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_56"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_56"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_48">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_29">
+            <property name="text">
+             <string>CHANNEL 36</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_29"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_29"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_46">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_27">
+            <property name="text">
+             <string>CHANNEL 37</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_27"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_27"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_53">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_34">
+            <property name="text">
+             <string>CHANNEL 38</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_34"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_34"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>71</y>
+         <width>261</width>
+         <height>585</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_30">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_35">
+            <property name="text">
+             <string>CHANNEL 01</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_35"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_35"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_44">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_52">
+            <property name="text">
+             <string>CHANNEL 02</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_52"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_52"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_45">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_26">
+            <property name="text">
+             <string>CHANNEL 03</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_26"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_26"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_47">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_31">
+            <property name="text">
+             <string>CHANNEL 04</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_31"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_31"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_49">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_25">
+            <property name="text">
+             <string>CHANNEL 05</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_25"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_25"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_50">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_30">
+            <property name="text">
+             <string>CHANNEL 06</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_30"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_30"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_54">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_49">
+            <property name="text">
+             <string>CHANNEL 07</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_49"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_49"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_57">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_46">
+            <property name="text">
+             <string>CHANNEL 08</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_46"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_46"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_59">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_28">
+            <property name="text">
+             <string>CHANNEL 09</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_28"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_28"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_60">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_54">
+            <property name="text">
+             <string>CHANNEL 10</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_54"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_54"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_62">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_50">
+            <property name="text">
+             <string>CHANNEL 11</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_50"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_50"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_64">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_40">
+            <property name="text">
+             <string>CHANNEL 12</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_40"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_40"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_65">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_48">
+            <property name="text">
+             <string>CHANNEL 13</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_48"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_48"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_67">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_45">
+            <property name="text">
+             <string>CHANNEL 14</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_45"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_45"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_68">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_53">
+            <property name="text">
+             <string>CHANNEL 15</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_53"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_53"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_69">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_41">
+            <property name="text">
+             <string>CHANNEL 16</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_41"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_41"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_71">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_38">
+            <property name="text">
+             <string>CHANNEL 17</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_38"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_38"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_72">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_43">
+            <property name="text">
+             <string>CHANNEL 18</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_43"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_43"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_73">
+          <item>
+           <widget class="QRadioButton" name="lvds_rx_en_6">
+            <property name="text">
+             <string>CHANNEL 19</string>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_freq_6"/>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lvds_glitch_cnt_6"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="read_all">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>790</y>
+        <width>1001</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>READ ALL</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>558</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QRadioButton" name="lvds_tx_en">
-           <property name="text">
-            <string>LVDS TX</string>
-           </property>
-           <property name="autoExclusive">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="cn_tx_cnfg">
-           <property name="text">
-            <string>CONFIGURE</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <widget class="QRadioButton" name="rx">
+         <property name="text">
+          <string>ALL RECEIVER</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4">
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout">
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_1">
-             <property name="text">
-              <string>CHANNEL 1</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_2">
-             <property name="text">
-              <string>CHANNEL 2</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_3">
-             <property name="text">
-              <string>CHANNEL 3</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_4">
-             <property name="text">
-              <string>CHANNEL 4</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_5">
-             <property name="text">
-              <string>CHANNEL 5</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_6">
-             <property name="text">
-              <string>CHANNEL 6</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_7">
-             <property name="text">
-              <string>CHANNEL 7</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_8">
-             <property name="text">
-              <string>CHANNEL 8</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_9">
-             <property name="text">
-              <string>CHANNEL 9</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_10">
-             <property name="text">
-              <string>CHANNEL 10</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_11">
-             <property name="text">
-              <string>CHANNEL 11</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_12">
-             <property name="text">
-              <string>CHANNEL 12</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_13">
-             <property name="text">
-              <string>CHANNEL 13</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_14">
-             <property name="text">
-              <string>CHANNEL 14</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_15">
-             <property name="text">
-              <string>CHANNEL 15</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_16">
-             <property name="text">
-              <string>CHANNEL 16</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_3">
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_17">
-             <property name="text">
-              <string>CHANNEL 17</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_18">
-             <property name="text">
-              <string>CHANNEL 18</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_19">
-             <property name="text">
-              <string>CHANNEL 19</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_20">
-             <property name="text">
-              <string>CHANNEL 20</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_21">
-             <property name="text">
-              <string>CHANNEL 21</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_22">
-             <property name="text">
-              <string>CHANNEL 22</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_23">
-             <property name="text">
-              <string>CHANNEL 23</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_24">
-             <property name="text">
-              <string>CHANNEL 24</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_25">
-             <property name="text">
-              <string>CHANNEL 25</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_26">
-             <property name="text">
-              <string>CHANNEL 26</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_27">
-             <property name="text">
-              <string>CHANNEL 27</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_28">
-             <property name="text">
-              <string>CHANNEL 28</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_29">
-             <property name="text">
-              <string>CHANNEL 29</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_30">
-             <property name="text">
-              <string>CHANNEL 30</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_31">
-             <property name="text">
-              <string>CHANNEL 31</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_32">
-             <property name="text">
-              <string>CHANNEL 32</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QRadioButton" name="lvds_tx_en_33">
-             <property name="text">
-              <string>CHANNEL 33</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
+        <widget class="QRadioButton" name="cn_rx1">
+         <property name="text">
+          <string>CN-RX1</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="cn_rx2">
+         <property name="text">
+          <string>CN-RX2</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rs422_rx1">
+         <property name="text">
+          <string>RS422-RX1</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rs422_rx2">
+         <property name="text">
+          <string>RS422-RX2</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rs422_rx3">
+         <property name="text">
+          <string>RS422-RX3</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="rs422_rx4">
+         <property name="text">
+          <string>RS422-RX4</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
     </widget>
-    <widget class="QGroupBox" name="groupBox_2">
+    <widget class="QGroupBox" name="Transmitter_group">
      <property name="geometry">
       <rect>
-       <x>240</x>
-       <y>80</y>
-       <width>171</width>
-       <height>91</height>
+       <x>20</x>
+       <y>20</y>
+       <width>421</width>
+       <height>561</height>
       </rect>
      </property>
      <property name="title">
-      <string>RS422 TRANSMITTER</string>
+      <string>TRANSMITTER</string>
      </property>
-     <widget class="QRadioButton" name="rs422_tx_en_34">
+     <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>60</y>
-        <width>84</width>
+        <x>20</x>
+        <y>70</y>
+        <width>251</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>LVDS TRANSMITTER</string>
+      </property>
+      <widget class="QRadioButton" name="lvds_tx_en">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>21</y>
+         <width>62</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LVDS TX</string>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>45</y>
+         <width>226</width>
+         <height>420</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_13">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_1">
+              <property name="text">
+               <string>CHANNEL 01 / --</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_2">
+              <property name="text">
+               <string>CHANNEL 02 / 34</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_3">
+              <property name="text">
+               <string>CHANNEL 03 / 35</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_4">
+              <property name="text">
+               <string>CHANNEL 04 / 36</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_5">
+              <property name="text">
+               <string>CHANNEL 05 / --</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_6">
+              <property name="text">
+               <string>CHANNEL 06 / --</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_7">
+              <property name="text">
+               <string>CHANNEL 07 / 37</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_8">
+              <property name="text">
+               <string>CHANNEL 08 / 38</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_9">
+              <property name="text">
+               <string>CHANNEL 09 / --</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_10">
+              <property name="text">
+               <string>CHANNEL 10 / 39</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_11">
+              <property name="text">
+               <string>CHANNEL 11 / 40</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_12">
+              <property name="text">
+               <string>CHANNEL 12 / 41</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_13">
+              <property name="text">
+               <string>CHANNEL 13 / 42</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_14">
+              <property name="text">
+               <string>CHANNEL 14 / 43</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_15">
+              <property name="text">
+               <string>CHANNEL 15 / 44</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_16">
+              <property name="text">
+               <string>CHANNEL 16 / 45</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_17">
+              <property name="text">
+               <string>CHANNEL 17 / 46</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_18">
+              <property name="text">
+               <string>CHANNEL 18 / --</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_19">
+              <property name="text">
+               <string>CHANNEL 19 / --</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_20">
+              <property name="text">
+               <string>CHANNEL 20 / 47</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_21">
+              <property name="text">
+               <string>CHANNEL 21 / --</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_22">
+              <property name="text">
+               <string>CHANNEL 22 / --</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_23">
+              <property name="text">
+               <string>CHANNEL 23 / 48</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_24">
+              <property name="text">
+               <string>CHANNEL 24 / 49</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_25">
+              <property name="text">
+               <string>CHANNEL 25 / 50</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_26">
+              <property name="text">
+               <string>CHANNEL 26 / --</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_27">
+              <property name="text">
+               <string>CHANNEL 27 / 51</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_28">
+              <property name="text">
+               <string>CHANNEL 28 / 52</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_29">
+              <property name="text">
+               <string>CHANNEL 29 / --</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_30">
+              <property name="text">
+               <string>CHANNEL 30 / 53</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_31">
+              <property name="text">
+               <string>CHANNEL 31 / 54</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_32">
+              <property name="text">
+               <string>CHANNEL 32 / 55</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="lvds_tx_en_33">
+              <property name="text">
+               <string>CHANNEL 33 / 56</string>
+              </property>
+              <property name="autoExclusive">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cn_tx_cnfg">
+          <property name="text">
+           <string>CONFIGURE</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>80</y>
+        <width>121</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>RS422 TRANSMITTER</string>
+      </property>
+      <widget class="QRadioButton" name="rs422_tx_en_34">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>84</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>CHANNEL 34</string>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="rs422_tx_cnfg">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>CONFIGURE</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>170</y>
+        <width>121</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>LVTTL TRANSMITTER</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>86</width>
+         <height>157</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="lvttl_tx_en_35">
+          <property name="text">
+           <string>CHANNEL 61</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="lvttl_tx_en_36">
+          <property name="text">
+           <string>CHANNEL 62</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="lvttl_tx_en_37">
+          <property name="text">
+           <string>CHANNEL 63</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="lvttl_tx_en_38">
+          <property name="text">
+           <string>CHANNEL 64</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="lvttl_tx_en_39">
+          <property name="text">
+           <string>CHANNEL 65</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="lvttl_tx_en_40">
+          <property name="text">
+           <string>CHANNEL 66</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="lvttl_tx_en_41">
+          <property name="text">
+           <string>CHANNEL 67</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QRadioButton" name="lvttl_tx_en">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>66</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LVTTL TX</string>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="lvttl_tx_cnfg">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>200</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>CONFIGURE</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_11">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>410</y>
+        <width>121</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>FREQUENCY (MHz)</string>
+      </property>
+      <widget class="QPushButton" name="freq_cnfg">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>CONFIGURE</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="freq_ip">
+       <property name="geometry">
+        <rect>
+         <x>76</x>
+         <y>31</y>
+         <width>21</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>10</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>31</y>
+         <width>59</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>FREQUENCY</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>283</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_81">
+       <item>
+        <widget class="QRadioButton" name="tx">
+         <property name="text">
+          <string>ALL TRANSMITTERS</string>
+         </property>
+         <property name="autoExclusive">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="tx_config">
+         <property name="text">
+          <string>CONFIGURE</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="tx_enable">
+         <property name="text">
+          <string>ENABLE</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QRadioButton" name="rs422_tx_en">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>30</y>
+        <width>69</width>
         <height>17</height>
        </rect>
       </property>
       <property name="text">
-       <string>CHANNEL 34</string>
+       <string>RS422 TX</string>
       </property>
       <property name="autoExclusive">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QWidget" name="layoutWidget">
+    </widget>
+    <widget class="QGroupBox" name="test_mode">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>590</y>
+       <width>421</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Continuous Test Mode</string>
+     </property>
+     <widget class="QWidget" name="">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>30</y>
-        <width>152</width>
-        <height>25</height>
+        <x>11</x>
+        <y>21</y>
+        <width>391</width>
+        <height>84</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <layout class="QVBoxLayout" name="verticalLayout_8">
        <item>
-        <widget class="QRadioButton" name="rs422_tx_en">
-         <property name="text">
-          <string>RS422 TX</string>
-         </property>
-         <property name="autoExclusive">
-          <bool>false</bool>
+        <widget class="QProgressBar" name="cyc_prog">
+         <property name="value">
+          <number>0</number>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="rs422_tx_cnfg">
-         <property name="text">
-          <string>CONFIGURE</string>
-         </property>
-        </widget>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_76">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Present Count</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="present_cnt">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>DELAY (Sec)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="delay">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="maxLength">
+              <number>60</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Cycle Count</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="cyc_cnt">
+           <property name="text">
+            <string>10</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="cyc_start">
+           <property name="text">
+            <string>START</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </widget>
     </widget>
-    <widget class="QGroupBox" name="groupBox_3">
+    <widget class="QGroupBox" name="flash_group">
      <property name="geometry">
       <rect>
-       <x>240</x>
-       <y>180</y>
-       <width>171</width>
-       <height>231</height>
+       <x>20</x>
+       <y>710</y>
+       <width>241</width>
+       <height>191</height>
       </rect>
      </property>
      <property name="title">
-      <string>LVTTL TRANSMITTER</string>
+      <string>FLASH</string>
      </property>
-     <widget class="QWidget" name="layoutWidget_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>30</y>
-        <width>152</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <widget class="QRadioButton" name="lvttl_tx_en">
-         <property name="text">
-          <string>LVTTL TX</string>
-         </property>
-         <property name="autoExclusive">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="lvttl_tx_cnfg">
-         <property name="text">
-          <string>CONFIGURE</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>60</y>
-        <width>86</width>
-        <height>157</height>
+        <y>20</y>
+        <width>220</width>
+        <height>155</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
+      <layout class="QVBoxLayout" name="verticalLayout_16">
        <item>
-        <widget class="QRadioButton" name="lvttl_tx_en_35">
-         <property name="text">
-          <string>CHANNEL 35</string>
-         </property>
-         <property name="autoExclusive">
-          <bool>false</bool>
-         </property>
-        </widget>
+        <layout class="QVBoxLayout" name="verticalLayout_15">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_82">
+           <item>
+            <widget class="QPushButton" name="address_3">
+             <property name="text">
+              <string>ADDRESS (0x)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="flash_address_edt">
+             <property name="text">
+              <string>00</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_83">
+           <item>
+            <widget class="QPushButton" name="address_4">
+             <property name="text">
+              <string>DATA (0x)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="flash_data_edt"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_84">
+           <item>
+            <widget class="QPushButton" name="flash_read">
+             <property name="text">
+              <string>READ</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="flash_write">
+             <property name="text">
+              <string>WRITE</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
        </item>
        <item>
-        <widget class="QRadioButton" name="lvttl_tx_en_36">
-         <property name="text">
-          <string>CHANNEL 36</string>
-         </property>
-         <property name="autoExclusive">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="lvttl_tx_en_37">
-         <property name="text">
-          <string>CHANNEL 37</string>
-         </property>
-         <property name="autoExclusive">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="lvttl_tx_en_38">
-         <property name="text">
-          <string>CHANNEL 38</string>
-         </property>
-         <property name="autoExclusive">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="lvttl_tx_en_39">
-         <property name="text">
-          <string>CHANNEL 39</string>
-         </property>
-         <property name="autoExclusive">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="lvttl_tx_en_40">
-         <property name="text">
-          <string>CHANNEL 40</string>
-         </property>
-         <property name="autoExclusive">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="lvttl_tx_en_41">
-         <property name="text">
-          <string>CHANNEL 41</string>
-         </property>
-         <property name="autoExclusive">
-          <bool>false</bool>
-         </property>
-        </widget>
+        <layout class="QVBoxLayout" name="verticalLayout_14">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_87">
+           <item>
+            <widget class="QPushButton" name="flash_count_l">
+             <property name="text">
+              <string>COUNT</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="flash_count">
+             <property name="text">
+              <string>1</string>
+             </property>
+             <property name="maxLength">
+              <number>255</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_88">
+           <item>
+            <widget class="QPushButton" name="flash_bulk_read">
+             <property name="text">
+              <string> BULK READ</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="flash_bulk_write">
+             <property name="text">
+              <string>BULK WRITE</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
        </item>
       </layout>
      </widget>
     </widget>
-    <widget class="QGroupBox" name="groupBox_11">
+    <widget class="QGroupBox" name="flash_group_1">
      <property name="geometry">
       <rect>
-       <x>240</x>
-       <y>420</y>
+       <x>270</x>
+       <y>710</y>
        <width>171</width>
-       <height>121</height>
+       <height>131</height>
       </rect>
      </property>
      <property name="title">
-      <string>FREQUENCY (MHz)</string>
+      <string>FLASH BULK</string>
      </property>
-     <widget class="QPushButton" name="freq_cnfg">
+     <widget class="QPushButton" name="flash_chip_erase">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>50</y>
+        <x>10</x>
+        <y>20</y>
         <width>75</width>
         <height>23</height>
        </rect>
       </property>
       <property name="text">
-       <string>CONFIGURE</string>
+       <string>CHIP ERASE</string>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QProgressBar" name="flash_write_prog">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
-        <width>151</width>
-        <height>22</height>
+        <y>90</y>
+        <width>161</width>
+        <height>21</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_80">
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>FREQUENCY</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="freq_ip"/>
-       </item>
-      </layout>
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="flash_full_mem_write">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>FULL MEMORY</string>
+      </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="">
+   </widget>
+   <widget class="QGroupBox" name="groupBox_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>281</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>COMMUNICATION</string>
+    </property>
+    <widget class="QPushButton" name="ref">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>30</y>
-       <width>283</width>
-       <height>25</height>
+       <x>10</x>
+       <y>20</y>
+       <width>51</width>
+       <height>51</height>
       </rect>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_81">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_18">
       <item>
-       <widget class="QRadioButton" name="tx">
+       <widget class="QPushButton" name="connect">
         <property name="text">
-         <string>ALL TRANSMITTERS</string>
-        </property>
-        <property name="autoExclusive">
-         <bool>false</bool>
+         <string>CONNECT</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="tx_config">
+       <widget class="QLineEdit" name="serial_number">
         <property name="text">
-         <string>CONFIGURE</string>
+         <string>137</string>
         </property>
        </widget>
       </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>89</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_17">
       <item>
-       <widget class="QPushButton" name="tx_enable">
+       <widget class="QComboBox" name="com_port"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ref_2">
         <property name="text">
-         <string>ENABLE</string>
+         <string>SERIAL NUMBER</string>
         </property>
        </widget>
       </item>
      </layout>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_8">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>30</y>
-      <width>1021</width>
-      <height>791</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>RECEIVER</string>
-    </property>
-    <widget class="QRadioButton" name="rx">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>30</y>
-       <width>131</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>ALL RECEIVER</string>
-     </property>
-     <property name="autoExclusive">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="QGroupBox" name="groupBox_7">
-     <property name="geometry">
-      <rect>
-       <x>750</x>
-       <y>320</y>
-       <width>261</width>
-       <height>361</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string>LVTTL RECEIVER</string>
-     </property>
-     <widget class="QTextBrowser" name="textBrowser">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>19</y>
-        <width>41</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FREQ&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;(MHz)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser_2">
-      <property name="geometry">
-       <rect>
-        <x>180</x>
-        <y>19</y>
-        <width>61</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GLITCH&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;COUNT&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="lvttl_rx_en">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>30</y>
-        <width>67</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>LVTTL RX</string>
-      </property>
-      <property name="autoExclusive">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QWidget" name="">
-      <property name="geometry">
-       <rect>
-        <x>21</x>
-        <y>71</y>
-        <width>230</width>
-        <height>275</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_12">
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_11">
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_10">
-           <item>
-            <widget class="QRadioButton" name="LVTTL_rx_en_61">
-             <property name="text">
-              <string>CHANNEL 61</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="rx_freq_61"/>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="glitch_cnt_61"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_11">
-           <item>
-            <widget class="QRadioButton" name="LVTTL_rx_en_62">
-             <property name="text">
-              <string>CHANNEL 62</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="rx_freq_62"/>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="glitch_cnt_62"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_12">
-           <item>
-            <widget class="QRadioButton" name="LVTTL_rx_en_63">
-             <property name="text">
-              <string>CHANNEL 63</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="rx_freq_63"/>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="glitch_cnt_63"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_13">
-           <item>
-            <widget class="QRadioButton" name="LVTTL_rx_en_64">
-             <property name="text">
-              <string>CHANNEL 64</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="rx_freq_64"/>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="glitch_cnt_64"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_14">
-           <item>
-            <widget class="QRadioButton" name="LVTTL_rx_en_65">
-             <property name="text">
-              <string>CHANNEL 65</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="rx_freq_65"/>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="glitch_cnt_65"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_15">
-           <item>
-            <widget class="QRadioButton" name="LVTTL_rx_en_66">
-             <property name="text">
-              <string>CHANNEL 66</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="rx_freq_66"/>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="glitch_cnt_66"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_16">
-           <item>
-            <widget class="QRadioButton" name="LVTTL_rx_en_67">
-             <property name="text">
-              <string>CHANNEL 67</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="rx_freq_67"/>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="glitch_cnt_67"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_17">
-           <item>
-            <widget class="QRadioButton" name="LVTTL_rx_en_68">
-             <property name="text">
-              <string>CHANNEL 68</string>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="rx_freq_68"/>
-           </item>
-           <item>
-            <widget class="QLCDNumber" name="glitch_cnt_68"/>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QPushButton" name="lvttl_rx_read">
-         <property name="text">
-          <string>READ</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="groupBox_6">
-     <property name="geometry">
-      <rect>
-       <x>750</x>
-       <y>70</y>
-       <width>261</width>
-       <height>231</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string>RS422 RECEIVER</string>
-     </property>
-     <widget class="QWidget" name="layoutWidget_5">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>30</y>
-        <width>81</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_8">
-       <item>
-        <widget class="QRadioButton" name="rs422_rx_en">
-         <property name="text">
-          <string>RS422 RX</string>
-         </property>
-         <property name="autoExclusive">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>70</y>
-        <width>228</width>
-        <height>149</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_10">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_9">
-         <item>
-          <widget class="QRadioButton" name="rs422_rx_en_57">
-           <property name="text">
-            <string>CHANNEL 57</string>
-           </property>
-           <property name="autoExclusive">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLCDNumber" name="RS422_freq_57"/>
-         </item>
-         <item>
-          <widget class="QLCDNumber" name="RS422_glitch_cnt_57"/>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_18">
-         <item>
-          <widget class="QRadioButton" name="rs422_rx_en_58">
-           <property name="text">
-            <string>CHANNEL 58</string>
-           </property>
-           <property name="autoExclusive">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLCDNumber" name="RS422_freq_58"/>
-         </item>
-         <item>
-          <widget class="QLCDNumber" name="RS422_glitch_cnt_58"/>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_19">
-         <item>
-          <widget class="QRadioButton" name="rs422_rx_en_59">
-           <property name="text">
-            <string>CHANNEL 59</string>
-           </property>
-           <property name="autoExclusive">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLCDNumber" name="RS422_freq_59"/>
-         </item>
-         <item>
-          <widget class="QLCDNumber" name="RS422_glitch_cnt_59"/>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_20">
-         <item>
-          <widget class="QRadioButton" name="rs422_rx_en_60">
-           <property name="text">
-            <string>CHANNEL 60</string>
-           </property>
-           <property name="autoExclusive">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLCDNumber" name="RS422_freq_60"/>
-         </item>
-         <item>
-          <widget class="QLCDNumber" name="RS422_glitch_cnt_60"/>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QPushButton" name="RS422_rx_read">
-         <property name="text">
-          <string>READ</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser_4">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>20</y>
-        <width>61</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GLITCH&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;COUNT&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser_3">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>20</y>
-        <width>41</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FREQ&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;(MHz)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QGroupBox" name="groupBox_5">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>70</y>
-       <width>731</width>
-       <height>711</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string>LVDS RECEIVER</string>
-     </property>
-     <widget class="QRadioButton" name="lvds_rx_en">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>30</y>
-        <width>62</width>
-        <height>17</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>LVDS RX</string>
-      </property>
-      <property name="autoExclusive">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser_5">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>20</y>
-        <width>61</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GLITCH&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;COUNT&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser_10">
-      <property name="geometry">
-       <rect>
-        <x>640</x>
-        <y>20</y>
-        <width>61</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GLITCH&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;COUNT&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser_9">
-      <property name="geometry">
-       <rect>
-        <x>580</x>
-        <y>20</y>
-        <width>41</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FREQ&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;(MHz)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser_8">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>20</y>
-        <width>41</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FREQ&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;(MHz)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QWidget" name="">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>70</y>
-        <width>700</width>
-        <height>618</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_9">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_76">
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_6">
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_35">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_1">
-               <property name="text">
-                <string>CHANNEL 1</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_1"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_1"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_34">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_2">
-               <property name="text">
-                <string>CHANNEL 2</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_2"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_2"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_33">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_3">
-               <property name="text">
-                <string>CHANNEL 3</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_3"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_3"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_32">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_4">
-               <property name="text">
-                <string>CHANNEL 4</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_4"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_4"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_31">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_5">
-               <property name="text">
-                <string>CHANNEL 5</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_5"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_5"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_30">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_6">
-               <property name="text">
-                <string>CHANNEL 6</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_6"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_6"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_29">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_7">
-               <property name="text">
-                <string>CHANNEL 7</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_7"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_7"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_28">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_8">
-               <property name="text">
-                <string>CHANNEL 8</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_8"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_8"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_27">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_9">
-               <property name="text">
-                <string>CHANNEL 9</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_9"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_9"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_26">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_10">
-               <property name="text">
-                <string>CHANNEL 10</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_10"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_10"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_25">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_11">
-               <property name="text">
-                <string>CHANNEL 11</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_11"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_11"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_24">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_12">
-               <property name="text">
-                <string>CHANNEL 12</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_12"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_12"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_23">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_13">
-               <property name="text">
-                <string>CHANNEL 13</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_13"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_13"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_22">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_14">
-               <property name="text">
-                <string>CHANNEL 14</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_14"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_14"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_21">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_15">
-               <property name="text">
-                <string>CHANNEL 15</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_15"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_15"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_7">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_16">
-               <property name="text">
-                <string>CHANNEL 16</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_16"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_16"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_36">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_17">
-               <property name="text">
-                <string>CHANNEL 17</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_17"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_17"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_37">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_18">
-               <property name="text">
-                <string>CHANNEL 18</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_18"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_18"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_38">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_19">
-               <property name="text">
-                <string>CHANNEL 19</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_19"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_19"/>
-             </item>
-            </layout>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_7">
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_39">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_20">
-               <property name="text">
-                <string>CHANNEL 20</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_20"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_20"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_40">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_21">
-               <property name="text">
-                <string>CHANNEL 21</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_21"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_21"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_41">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_22">
-               <property name="text">
-                <string>CHANNEL 22</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_22"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_22"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_42">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_23">
-               <property name="text">
-                <string>CHANNEL 23</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_23"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_23"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_43">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_24">
-               <property name="text">
-                <string>CHANNEL 24</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_24"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_24"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_44">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_25">
-               <property name="text">
-                <string>CHANNEL 25</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_25"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_25"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_45">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_26">
-               <property name="text">
-                <string>CHANNEL 26</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_26"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_26"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_46">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_27">
-               <property name="text">
-                <string>CHANNEL 27</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_27"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_27"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_47">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_28">
-               <property name="text">
-                <string>CHANNEL 28</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_28"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_28"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_48">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_29">
-               <property name="text">
-                <string>CHANNEL 29</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_29"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_29"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_49">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_30">
-               <property name="text">
-                <string>CHANNEL 30</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_30"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_30"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_50">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_31">
-               <property name="text">
-                <string>CHANNEL 31</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_31"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_31"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_51">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_32">
-               <property name="text">
-                <string>CHANNEL 32</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_32"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_32"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_52">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_33">
-               <property name="text">
-                <string>CHANNEL 33</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_33"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_33"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_53">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_34">
-               <property name="text">
-                <string>CHANNEL 34</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_34"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_34"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_54">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_35">
-               <property name="text">
-                <string>CHANNEL 35</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_35"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_35"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_55">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_36">
-               <property name="text">
-                <string>CHANNEL 36</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_36"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_36"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_56">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_37">
-               <property name="text">
-                <string>CHANNEL 37</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_37"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_37"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_57">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_38">
-               <property name="text">
-                <string>CHANNEL 38</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_38"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_38"/>
-             </item>
-            </layout>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QVBoxLayout" name="verticalLayout_8">
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_58">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_39">
-               <property name="text">
-                <string>CHANNEL 39</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_39"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_39"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_59">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_40">
-               <property name="text">
-                <string>CHANNEL 40</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_40"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_40"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_60">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_41">
-               <property name="text">
-                <string>CHANNEL 41</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_41"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_41"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_62">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_43">
-               <property name="text">
-                <string>CHANNEL 43</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_43"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_43"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_61">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_42">
-               <property name="text">
-                <string>CHANNEL 42</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_42"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_42"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_63">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_44">
-               <property name="text">
-                <string>CHANNEL 44</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_44"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_44"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_64">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_45">
-               <property name="text">
-                <string>CHANNEL 45</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_45"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_45"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_65">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_46">
-               <property name="text">
-                <string>CHANNEL 46</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_46"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_46"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_66">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_47">
-               <property name="text">
-                <string>CHANNEL 47</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_47"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_47"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_67">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_48">
-               <property name="text">
-                <string>CHANNEL 48</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_48"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_48"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_68">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_49">
-               <property name="text">
-                <string>CHANNEL 49</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_49"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_49"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_69">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_50">
-               <property name="text">
-                <string>CHANNEL 50</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_50"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_50"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_70">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_51">
-               <property name="text">
-                <string>CHANNEL 51</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_51"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_51"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_71">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_52">
-               <property name="text">
-                <string>CHANNEL 52</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_52"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_52"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_72">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_53">
-               <property name="text">
-                <string>CHANNEL 53</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_53"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_53"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_73">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_54">
-               <property name="text">
-                <string>CHANNEL 54</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_54"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_54"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_74">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_55">
-               <property name="text">
-                <string>CHANNEL 55</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_55"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_55"/>
-             </item>
-            </layout>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_75">
-             <item>
-              <widget class="QRadioButton" name="lvds_rx_en_56">
-               <property name="text">
-                <string>CHANNEL 56</string>
-               </property>
-               <property name="autoExclusive">
-                <bool>false</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_freq_56"/>
-             </item>
-             <item>
-              <widget class="QLCDNumber" name="lvds_glitch_cnt_56"/>
-             </item>
-            </layout>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QPushButton" name="lvds_rx_read">
-         <property name="text">
-          <string>READ</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser_7">
-      <property name="geometry">
-       <rect>
-        <x>420</x>
-        <y>20</y>
-        <width>61</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;GLITCH&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;COUNT&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QTextBrowser" name="textBrowser_6">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>20</y>
-        <width>41</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;FREQ&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;(MHz)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_9">
+   <widget class="QGroupBox" name="groupBox_4">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>680</y>
-      <width>251</width>
-      <height>131</height>
+      <y>100</y>
+      <width>281</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Action Log</string>
+    </property>
+    <widget class="QTextBrowser" name="action_log">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>261</width>
+       <height>591</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="action_log_clr">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>620</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CLEAR ACTION LOG</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="DEBUG">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>620</y>
+       <width>71</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>DEBUG</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Debug_group">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>770</y>
+      <width>281</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="title">
      <string>DEBUG</string>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>218</width>
+       <x>41</x>
+       <y>21</y>
+       <width>220</width>
        <height>89</height>
       </rect>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_14">
+     <layout class="QVBoxLayout" name="verticalLayout_6">
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_77">
         <item>
          <widget class="QPushButton" name="address">
           <property name="text">
-           <string>ADDRESS</string>
+           <string>ADDRESS (0x)</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="address_edt"/>
+         <widget class="QLineEdit" name="address_edt">
+          <property name="text">
+           <string>00</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>
@@ -2461,7 +2945,7 @@ p, li { white-space: pre-wrap; }
         <item>
          <widget class="QPushButton" name="address_2">
           <property name="text">
-           <string>DATA</string>
+           <string>DATA (0x)</string>
           </property>
          </widget>
         </item>
@@ -2491,77 +2975,71 @@ p, li { white-space: pre-wrap; }
      </layout>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_10">
+   <widget class="QGroupBox" name="uart_bulk_r">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>30</y>
-      <width>231</width>
-      <height>71</height>
+      <y>900</y>
+      <width>281</width>
+      <height>91</height>
      </rect>
     </property>
     <property name="title">
-     <string>COMMUNICATION</string>
+     <string>UART BULK READ/WRITE</string>
     </property>
-    <widget class="QPushButton" name="connect">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>30</y>
-       <width>75</width>
-       <height>23</height>
+       <x>30</x>
+       <y>20</y>
+       <width>218</width>
+       <height>58</height>
       </rect>
      </property>
-     <property name="text">
-      <string>CONNECT</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="ref">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>41</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>REF</string>
-     </property>
-    </widget>
-    <widget class="QComboBox" name="com_port">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>30</y>
-       <width>69</width>
-       <height>22</height>
-      </rect>
-     </property>
+     <layout class="QVBoxLayout" name="uart_bulk">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_86">
+        <item>
+         <widget class="QPushButton" name="uart_count_1">
+          <property name="text">
+           <string>COUNT</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="uart_count">
+          <property name="text">
+           <string>1</string>
+          </property>
+          <property name="maxLength">
+           <number>255</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_85">
+        <item>
+         <widget class="QPushButton" name="uart_bulk_read">
+          <property name="text">
+           <string>BULK READ</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="uart_bulk_write">
+          <property name="text">
+           <string>BULK WRITE</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
     </widget>
    </widget>
-   <widget class="QTextBrowser" name="action_log">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>690</y>
-      <width>171</width>
-      <height>121</height>
-     </rect>
-    </property>
-   </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1653</width>
-     <height>21</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
